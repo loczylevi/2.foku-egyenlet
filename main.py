@@ -1,7 +1,7 @@
 def masodfoku(a,b,c):
-  if 2*a < 0:
+  if b + (b **2 -4*a*c) < 0:
     return None
-  if 2*a >= 0:
+  else:
     minusz = -b - (b **2 -4*a*c) ** 0.5
     osztas = minusz / (2*a)
     plusz = -b + (b **2 -4*a*c) ** 0.5
